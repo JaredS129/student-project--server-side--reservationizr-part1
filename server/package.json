@@ -25,7 +25,8 @@
     "lodash": "^4.17.21",
     "mongodb-memory-server": "^7.4.1",
     "prettier": "^2.4.1",
-    "start-server-and-test": "^1.14.0"
+    "start-server-and-test": "^1.14.0",
+    "supertest": "^6.2.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
