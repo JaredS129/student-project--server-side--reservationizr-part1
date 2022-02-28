@@ -42,6 +42,13 @@ const Reservation = () => {
 
   return (
     <>
+      <h2>{reservation.restaurantName}</h2>
+      <p>{reservation.date}</p>
+      <p>
+        <strong>Party size: </strong>
+        {reservation.partySize}
+      </p>
+      <hr className="divider"></hr>
       <BackButton />
     </>
   );
