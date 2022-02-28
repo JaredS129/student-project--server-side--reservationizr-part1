@@ -17,4 +17,12 @@ app.get("/reservations", async (req, res) => {
   return res.status(200).send(formattedReservations);
 });
 
+app.get("/reservations/:id", async (req, res) => {
+  const id = req.params.id;
+  const reservation = await ReservationModel.findById(id);
+  const formattedReservation = formatReservation(reservation);
+
+  return res.status(200).send(formattedReservation);
+});
+
 module.exports = app;
