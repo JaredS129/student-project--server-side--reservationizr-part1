@@ -1,0 +1,14 @@
+ul {
+  padding-left: 0.7rem;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.divider {
+  border-style: dashed;
+  border-color: lightgray;
+  margin-top: 1.3rem;
+}
