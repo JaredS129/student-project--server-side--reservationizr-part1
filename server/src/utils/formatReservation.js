@@ -1,12 +1,11 @@
-const formatProperty = (property) => {
+const formatReservation = (reservation) => {
   return {
-    id: property._id,
-    askingPrice: property.askingPrice,
-    description: property.description,
-    address: property.address,
-    title: property.title,
-    img: property.img,
+    id: reservation._id,
+    partySize: reservation.partySize,
+    date: reservation.date,
+    userId: reservation.userId,
+    restaurantName: reservation.restaurantName,
   };
 };
 
-module.exports = formatProperty;
+module.exports = formatReservation;
