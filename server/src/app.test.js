@@ -27,4 +27,21 @@ describe("app", () => {
         expect(res.body).toEqual(expected);
       });
   });
+
+  test("GET /reservations/:id should respond with a single reservation", async () => {
+    const expected = {
+      id: "614abf0a93e8e80ace792ac6",
+      partySize: 2,
+      date: "2023-12-03T07:00:00.000Z",
+      userId: "614abe145f317b89a2e36883",
+      restaurantName: "Green Curry",
+    };
+
+    await request(app)
+      .get("/reservations/614abf0a93e8e80ace792ac6")
+      .expect(200)
+      .expect((res) => {
+        expect(res.body).toEqual(expected);
+      });
+  });
 });
