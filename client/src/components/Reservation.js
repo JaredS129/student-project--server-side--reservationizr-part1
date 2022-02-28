@@ -39,11 +39,13 @@ const Reservation = () => {
   if (isLoading) {
     return <p>Loading...</p>;
   }
+  
+  const formattedDate = formatDate(reservation.date);
 
   return (
     <>
       <h2>{reservation.restaurantName}</h2>
-      <p>{reservation.date}</p>
+      <p>{formattedDate}</p>
       <p>
         <strong>Party size: </strong>
         {reservation.partySize}
