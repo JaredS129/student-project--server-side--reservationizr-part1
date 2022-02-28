@@ -44,4 +44,15 @@ describe("app", () => {
         expect(res.body).toEqual(expected);
       });
   });
+
+  test("GET /reservations/:id should respond with 400 error code if id is invalid", async () => {
+    const expected = { message: "id provided is invalid" };
+
+    await request(app)
+      .get("/reservations/invalidid")
+      .expect(400)
+      .expect((res) => {
+        expect(res.body).toEqual(expected);
+      });
+  });
 });
