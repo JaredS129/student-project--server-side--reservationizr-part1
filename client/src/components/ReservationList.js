@@ -25,8 +25,8 @@ const ReservationList = () => {
 
           return (
             <li key={reservation.id}>
-              <h2>{reservation.restaurantName}</h2>
-              <p>{formattedDate}</p>
+              <h2 className="reservation-title">{reservation.restaurantName}</h2>
+              <p className="date">{formattedDate}</p>
               <Link to={"reservations/" + reservation.id}>View details →</Link>
               <hr className="divider" />
             </li>

@@ -12,3 +12,13 @@ li {
   border-color: lightgray;
   margin-top: 1.3rem;
 }
+
+.date {
+  color: gray;
+  margin-bottom: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.reservation-title {
+  margin-bottom: 0;
+}

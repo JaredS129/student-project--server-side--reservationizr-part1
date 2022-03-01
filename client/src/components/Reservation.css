@@ -8,4 +8,19 @@
   border-style: dashed;
   border-color: lightgray;
   margin-top: 1.3rem;
+  margin-bottom: 3.2rem;
+}
+
+.reservation-date {
+  color: gray;
+  margin-bottom: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.restaurant-name {
+  margin-bottom: 1.2rem;
+}
+
+.party-size {
+  margin-bottom: 2rem;
 }

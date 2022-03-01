@@ -44,9 +44,9 @@ const Reservation = () => {
 
   return (
     <>
-      <h2>{reservation.restaurantName}</h2>
-      <p>{formattedDate}</p>
-      <p>
+      <h2 className="restaurant-name">{reservation.restaurantName}</h2>
+      <p className="reservation-date">{formattedDate}</p>
+      <p className="party-size">
         <strong>Party size: </strong>
         {reservation.partySize}
       </p>
