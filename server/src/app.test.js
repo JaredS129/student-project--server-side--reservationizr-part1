@@ -55,4 +55,15 @@ describe("app", () => {
         expect(res.body).toEqual(expected);
       });
   });
+
+  test("GET /reservations/:id should respond with 404 error code if id does not exist", async () => {
+    const expected = { message: "id not found" };
+
+    await request(app)
+      .get("/reservations/614abf0a93e8e80ace792ac7")
+      .expect(404)
+      .expect((res) => {
+        expect(res.body).toEqual(expected);
+      });
+  });
 });

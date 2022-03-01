@@ -39,7 +39,7 @@ const Reservation = () => {
   if (isLoading) {
     return <p>Loading...</p>;
   }
-  
+
   const formattedDate = formatDate(reservation.date);
 
   return (
