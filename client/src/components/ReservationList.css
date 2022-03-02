@@ -17,17 +17,16 @@ li {
 
 .date {
   color: gray;
-  margin-bottom: 0.7rem;
-  margin-top: 0.5rem;
 }
 
 .reservation-title {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .single-reservation {
   display: grid;
   grid-template-columns: 1fr;
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 54rem) {
@@ -37,7 +36,6 @@ li {
     align-items: center;
     justify-items: left;
   }
-
   ul {
     width: 43rem;
     min-width: none;
