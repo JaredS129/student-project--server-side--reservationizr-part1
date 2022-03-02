@@ -23,7 +23,6 @@ const Reservation = () => {
       setReservation(data);
       setIsLoading(false);
     };
-
     fetchData();
   }, [id]);
 
@@ -44,14 +43,16 @@ const Reservation = () => {
 
   return (
     <>
-      <h2 className="restaurant-name">{reservation.restaurantName}</h2>
-      <p className="reservation-date">{formattedDate}</p>
-      <p className="party-size">
-        <strong>Party size: </strong>
-        {reservation.partySize}
-      </p>
-      <hr className="divider"></hr>
-      <BackButton />
+      <div className="reservation-details">
+        <h2 className="restaurant-name">{reservation.restaurantName}</h2>
+        <p className="reservation-date">{formattedDate}</p>
+        <p className="party-size">
+          <strong>Party size: </strong>
+          {reservation.partySize}
+        </p>
+        <hr className="divider"></hr>
+        <BackButton />
+      </div>
     </>
   );
 };

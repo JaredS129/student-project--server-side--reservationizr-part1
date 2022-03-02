@@ -1,14 +1,7 @@
 .reservation {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px dashed #ccc;
-}
-
-.divider {
-  border-style: dashed;
-  border-color: lightgray;
-  margin-top: 1.3rem;
-  margin-bottom: 3.2rem;
 }
 
 .reservation-date {
@@ -23,4 +16,21 @@
 
 .party-size {
   margin-bottom: 2rem;
+}
+
+.reservation-details {
+  min-width: 12.5rem;
+  max-width: 29rem;
+  width: 80vw;
+}
+
+@media only screen and (min-width: 54rem) {
+  .reservation {
+    padding-bottom: 1.5rem;
+  }
+  .reservation-details {
+    min-width: 12.5rem;
+    max-width: 48rem;
+    width: 80vw;
+  }
 }

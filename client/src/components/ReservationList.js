@@ -24,7 +24,7 @@ const ReservationList = () => {
           const formattedDate = formatDate(reservation.date);
 
           return (
-            <li key={reservation.id}>
+            <li key={reservation.id} className="single-reservation reservation">
               <h2 className="reservation-title">
                 {reservation.restaurantName}
               </h2>

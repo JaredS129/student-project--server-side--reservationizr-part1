@@ -1,5 +1,8 @@
 ul {
   padding-left: 0.7rem;
+  min-width: 12rem;
+  max-width: 29rem;
+  width: 80vw;
 }
 
 li {
@@ -10,7 +13,6 @@ li {
 .divider {
   border-style: dashed;
   border-color: lightgray;
-  margin-top: 1.3rem;
 }
 
 .date {
@@ -21,4 +23,24 @@ li {
 
 .reservation-title {
   margin-bottom: 0;
+}
+
+.single-reservation {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 54rem) {
+  .reservation {
+    grid-template-columns: 1fr 1fr max-content;
+    grid-column-gap: 5rem;
+    align-items: center;
+    justify-items: left;
+  }
+
+  ul {
+    width: 43rem;
+    min-width: none;
+    max-width: none;
+  }
 }

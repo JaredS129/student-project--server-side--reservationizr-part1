@@ -8,7 +8,7 @@ import ReservationList from "./components/ReservationList";
 const App = () => {
   return (
     <>
-      <Header />
+      <Header className="header"/>
       <div className="container">
         <Switch>
           <Route path="/reservations/:id">
