@@ -30,4 +30,8 @@ app.get("/reservations/:id", async (req, res) => {
   return res.status(200).send(formattedReservation);
 });
 
+app.get("*", async (req, res) => {
+  return res.status(404).send({ message: "page not found" });
+});
+
 module.exports = app;

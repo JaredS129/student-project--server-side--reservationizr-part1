@@ -28,6 +28,17 @@ describe("app", () => {
       });
   });
 
+  test("GET /invalidurl should respond with 404 response", async () => {
+    const expected = { message: "page not found" };
+
+    await request(app)
+      .get("/invalidurl")
+      .expect(404)
+      .expect((res) => {
+        expect(res.body).toEqual(expected);
+      });
+  });
+
   test("GET /reservations/:id should respond with a single reservation", async () => {
     const expected = {
       id: "614abf0a93e8e80ace792ac6",
