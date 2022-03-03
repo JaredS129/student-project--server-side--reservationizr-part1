@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const reservationSchema = new Schema({
-  partySize: { type: Number, required: true },
+  partySize: { type: Number, minimum: 1, required: true },
   date: { type: Date, required: true },
   userId: { type: String, required: true },
   restaurantName: { type: String, required: true },
